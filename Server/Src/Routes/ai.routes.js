@@ -1,7 +1,7 @@
-import express from "express";
-import { generateText } from "../Controller/ai.controller.js"; // Must include .js extension
-
+const express = require("express");
 const router = express.Router();
-router.post("/generate", generateText);
+const { generateText } = require("../Controller/ai.controller");
 
-export default router; // ES Modules default export
+router.post("/ai" , generateText);
+
+module.exports = router;

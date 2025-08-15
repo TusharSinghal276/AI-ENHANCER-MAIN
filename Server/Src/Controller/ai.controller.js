@@ -1,4 +1,4 @@
- import express from "express";
+import express from "express";
 import generateContent from "../Service/ai.service.js";
 
 export const generateText = async (req, res) => {
